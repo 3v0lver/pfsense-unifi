@@ -25,45 +25,36 @@
  */
 	]]>
 	</copyright>
-	<name>unifi</name>
-	<title>Diagnostics: Unifi</title>
+	<name>Unifi Controller</name>
+	<version>0.0.1</version>
+	<title>Unifi Controller Settings</title>
 	<include_file>/usr/local/pkg/unifi.inc</include_file>
 	<menu>
-		<name>darkstat Settings</name>
-		<tooltiptext>Setup darkstat specific settings.</tooltiptext>
-		<section>Diagnostics</section>
-		<url>/pkg_edit.php?xml=darkstat.xml</url>
-	</menu>
-	<menu>
-		<name>darkstat</name>
-		<tooltiptext>Access darkstat</tooltiptext>
-		<section>Diagnostics</section>
-		<url>/darkstat_redirect.php</url>
+		<name>Unifi Controller</name>
+		<tooltiptext>Setup unifi controller specific settings.</tooltiptext>
+		<section>Services</section>
+		<url>/unifi_settings.php</url>
 	</menu>
 	<service>
-		<name>darkstat</name>
-		<rcfile>darkstat.sh</rcfile>
-		<executable>darkstat</executable>
-		<description>Darkstat bandwidth monitoring daemon</description>
+		<name>unifi_gateway</name>
+		<rcfile>unifi_gateway.sh</rcfile>
+		<executable>unifi_gateway</executable>
+		<description>Unifi Security Gateway daemon</description>
 	</service>
 	<tabs>
 		<tab>
-			<text>darkstat Settings</text>
-			<url>/pkg_edit.php?xml=darkstat.xml</url>
+			<text>Settings</text>
+			<url>/unifi_settings.php</url>
 			<active/>
-		</tab>
-		<tab>
-			<text>Access darkstat</text>
-			<url>/darkstat_redirect.php</url>
 		</tab>
 	</tabs>
 	<advanced_options>enabled</advanced_options>
 	<fields>
 		<field>
-			<fielddescr>Enable darkstat</fielddescr>
+			<fielddescr>Enable USG</fielddescr>
 			<fieldname>enable</fieldname>
 			<type>checkbox</type>
-			<description>Check to enable darkstat.</description>
+			<description>Check to enable USG.</description>
 		</field>
 		<field>
 			<fielddescr>Capture Interfaces</fielddescr>
