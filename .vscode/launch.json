@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File (Integrated Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current File (External Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Python: unifi_console.py [run]",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args" : ["--loglevel","DEBUG","run"]
+        },
+        {
+            "name": "Python: speedtest.py [start]",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args" : ["--server","29865","--debug","--source","192.168.1.156","192.168.1.156"]
+        },
+        {
+            "name": "Python: unifi_console.py [startw]",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args" : ["--mode","usgp","--config","conf/unifi-gateway.work.conf.json","run"]
+        }
+        ,
+        {
+            "name": "Python: unifi_console.py [set-adopt]",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args" : ["set-adopt","-s","http://192.168.106.172:8080/inform","-k","2e98f16d3fb22739be92437644e2b81c"]
+        }
+    ]
+}

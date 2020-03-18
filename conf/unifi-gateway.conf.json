@@ -1,0 +1,11 @@
+{
+ "gateway": {
+  "firmware": "4.4.44.5213871", 
+  "is_adopted": false, 
+  "lan_if": "nfe0", 
+  "showhosts": false
+ }, 
+ "global": {
+  "pid_file": "unifi-gateway.pid"
+ }
+}

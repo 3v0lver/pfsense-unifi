@@ -1,0 +1,32 @@
+{
+ "ports": [
+  {
+   "enabled": true, 
+   "pfsense": "nfe0", 
+   "unifi": "eth0", 
+   "unifi-description": "LAN", 
+   "wan": false
+  }, 
+  {
+   "enabled": false, 
+   "pfsense": "", 
+   "unifi": "eth1", 
+   "unifi-description": "", 
+   "wan": false
+  }, 
+  {
+   "enabled": true, 
+   "pfsense": "nfe0.10", 
+   "unifi": "eth2", 
+   "unifi-description": "WAN", 
+   "wan": true
+  }, 
+  {
+   "enabled": false, 
+   "pfsense": "", 
+   "unifi": "eth3", 
+   "unifi-description": "", 
+   "wan": true
+  }
+ ]
+}
